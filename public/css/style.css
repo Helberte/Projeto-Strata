@@ -1,0 +1,369 @@
+@font-face{
+  font-family: 'montserrat';
+  src: url('../../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: montserrat, 'sans-serif';
+  text-decoration: none;
+  font-weight: 500;
+}
+h1{
+  font-size: 26px;
+  color: #6d6d6d;
+}
+p{
+  color: #6d6d6d;
+  font-size: 15px;
+}
+
+header{
+  height: 100vh;
+  width: 35%;
+  position: fixed;
+
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), transparent),
+   url('../img/bg.jpg');
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+header .pessoa{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  margin-top: 22%;
+  margin-right: 40px;
+}
+header .pessoa img{
+  border-radius: 50%;
+}
+header .pessoa h2{
+  text-align: end;
+  margin-top: 25px;
+  font-size: 20px;
+  color: #d3c9c7;
+  font-weight: 500;
+}
+header .pessoa h2 strong{
+  color: white;
+  font-weight: 500;
+}
+main{
+  width: 65%;
+  position: absolute;
+  right: 0;
+  padding: 130px 40px 40px 40px;
+}
+
+.footer-header{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #d3c9c7;
+  margin-right: 40px;
+  margin-bottom: 15px;
+}
+.footer-header .fa-brands{
+  font-size: 22px;
+  margin-left: 12px;
+  margin-bottom: 17px;
+}
+.footer-header .copy{
+  font-size: 12px;
+  font-weight: 300;
+}
+.footer-header .copy a{
+  color: #d3c9c7;
+  text-decoration: underline;
+}
+
+/*  sessao 1  */
+
+.space-botton-h1{
+  margin-bottom: 33px;
+}
+.sessao-1 .button-sessao1-veja-mais{
+  margin-top: 35px;
+  margin-bottom: 35px;
+  width: 120px;
+  height: 50px;
+  border-radius: 6px;
+  border: solid 2px #d3c9c7;
+  background-color: transparent;
+  color: #6d6d6d;
+  font-size: 15px;
+
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+.sessao-1 .button-sessao1-veja-mais:hover{
+  background-color: #6d6d6d;
+  color: white;
+  border: none;
+}
+
+.cards{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.cards p{
+  width: 100%;
+  
+}
+
+.cards .para-meio{
+  margin: 35px 0;
+}
+
+.cards .card img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  transition: all .3s ease;
+}
+.cards .card img:hover{
+  transform: scale(1.02);
+}
+
+.cards .card{
+  width: 43%;
+}
+.veja-portfolio{
+  width: 230px;
+  margin: 35px 0;
+
+  border: none;
+  height: 50px;
+  border-radius: 6px;
+  background-color: #49bf9d;
+  color: white;
+  font-size: 15px;
+  transition: all .2s ease-in;
+  cursor: pointer;
+}
+.veja-portfolio:hover{
+  background-color: transparent;
+  color: #368b73;
+  border: 2px solid #49bf9d;
+}
+
+/*  sessão 2 */
+
+.contato{
+  margin-top: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contato form{
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+}
+.contato form input,
+.contato form textarea{
+  outline: 0;
+}
+.contato form input,
+.contato form textarea{
+  border: none;
+  background-color: #cccccc;
+  border-radius: 6px;
+  color: white;
+}
+
+.contato form label{
+  text-transform: capitalize;
+  margin: 13px 0 5px;
+  color: #368b73;
+}
+.contato form .dados-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contato form .dados-1 .dados{
+  height: 50px;
+  padding: 0 15px;
+  font-size: 15px;
+}
+.contato form textarea{
+  padding: 15px;
+  font-size: 15px;
+  resize: none;
+  height: 150px;
+}
+.contato form .dados-1 div{
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+.contato form .button-submit{
+  align-self: flex-start;
+
+  margin-top: 25px;
+  margin-bottom: 35px;
+  width: 120px;
+  height: 50px;
+  border-radius: 6px;
+  border: solid 2px #d3c9c7;
+  background-color: transparent;
+  color: #6d6d6d;
+  font-size: 15px;
+
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+.contato form .button-submit:hover{
+  background-color: #6d6d6d;
+  color: white;
+  border: none;
+}
+.contato .endereco{
+  width: 30%;
+  padding: 0 15px;
+}
+.contato .endereco p{
+  margin-bottom: 20px;
+}
+
+/*  sessão 3 */
+
+.sessao-3 h2{
+  font-size: 20px;
+  color: #6d6d6d;
+  margin-bottom: 20px;
+}
+
+.sessao-3 p .emp{
+  text-emphasis: 'o';
+}
+.sessao-3 p .unde{
+  text-decoration: underline;
+}
+
+.sessao-3 p code {
+  background-color: #f7f7f7;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+
+.sessao-3 p a{
+  color: rgb(100,206,201);
+  text-decoration: underline;
+}
+.sessao-3 p{
+  margin-bottom: 45px;
+}
+.sessao-3 .hs{
+  color: #6d6d6d;
+}
+.sessao-3 .citacao p{
+  margin: 0 20px 10px;
+}
+.sessao-3 .citacao {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 40px;
+}
+.sessao-3 .citacao::after{
+  content: "";
+  display: block;
+  width: 4px;
+  height: 67px;
+  top: -10px;
+  background-color: #ccc;
+  align-self: flex-start;
+  position: absolute;
+}
+
+.sessao-3 .trecho-codigo{
+  background-color: #f7f7f7;
+  width: 100%;
+  display: block;
+  padding: 40px;
+  color: #368b73;
+  font-size: 13px;
+  border-radius: 5px;
+  border: solid 1.5px #dddddd;
+  margin-bottom: 20px;
+}
+.sessao-3 .trecho-codigo span{
+  margin: 7px 25px;
+}
+
+/* sessão 3 */
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .column{
+  width: 50%;
+  border: solid 1.5px #dddddd;
+}
+.container .column-1 ul,
+.container .column-1 ol{
+  margin-left: 18px;
+  margin-bottom: 15px;
+}
+
+.container .column-1 .bts-1 button{
+  width: 100px;
+  margin-right: 7px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+.container .column-1 .bts-1 .bt1{
+  background-color: #49bf9d;
+  border: none;
+  color: white;
+}
+.container .column-1 .bts-1 .bt2{
+  background-color: transparent;
+  border: 2px solid #49bf9d;
+  color: #368b73;
+}
+.container .column-1 .bts-2 .bt1{
+  background-color: #49bf9d;
+  border: none;
+  color: white;
+}
+.container .column-1 .bts-2 .bt2{
+  background-color: transparent;
+  border: 2px solid #49bf9d;
+  color: #368b73;
+}
+.container .column-1 .bts-2 button{
+  width: 80px;
+  margin-right: 7px;
+  height: 35px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
