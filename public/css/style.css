@@ -20,6 +20,39 @@ p{
   font-size: 15px;
 }
 
+/* estilização scroll-btn */
+
+.scroll-btn{
+  width: 45px;
+  height: 45px;
+  background-color: #49bf9d;
+  border-radius: 5px;
+  position: fixed;
+  z-index: 1000;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 0 7px 3px rgba(0,0,0,0.2);
+  opacity: 0;
+  pointer-events: none;
+
+  transition: all 0.2s ease-in-out;
+}
+.scroll-btn:hover{
+  transform: scale(1.1);
+}
+.scroll-btn.show-btn{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
 header{
   height: 100vh;
   width: 35%;
@@ -452,4 +485,146 @@ main{
 }
 .sessao-4 .table-2 .first-line{
   border-left: 1px solid #ccc;
+}
+
+/* sessão 5 */
+
+.sessao-5 div{
+  margin-bottom: 30px;
+}
+.sessao-5 .button-three,
+.sessao-5 .button-four{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.button-fill{
+  width: 100px;
+  height: 40px;
+  background-color: #49bf9d;
+  color: white;
+  border-radius: 7px;
+  border: none;
+
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.button-fill:hover{
+  background-color: transparent;
+  color: #383838;
+  border: 2px solid #368b73;
+}
+.button-not-fill{
+  width: 100px;
+  height: 40px;
+  background-color: transparent;
+  color: #383838;
+  border-radius: 7px;
+  border: solid 2px #78e0c3;
+
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.button-not-fill:hover{
+  background-color: #49bf9d;
+  color: white;
+  border: none;
+}
+
+/* sessão 6 */
+
+.sessao-6 h1{
+  margin-top: 40px;
+}
+
+.sessao-6 form{
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+.sessao-6 form input{
+  display: block;
+}
+.sessao-6 form textarea{
+  display: block;
+}
+.sessao-6 form div{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 18px;
+}
+.sessao-6 form div input{
+  display: inline;
+  margin-right: 8px;
+}
+.input-sessao-6-fill{
+  width: 100%;
+  height: 50px;
+  padding: 5px 13px;
+  color: black;
+  border-radius: 7px;
+  background-color: #cccccc;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  margin: 7px 0 20px 0;
+}
+.sessao-6 form textarea {
+  resize: none;
+  height: 150px;
+  padding-top: 15px;
+}
+
+/*  sessão 7 */
+
+.sessao-7 h1{
+  margin-top: 35px;
+}
+.sessao-7 .first-image{
+  width: 100%;
+  height: 500px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+
+  transition: all 0.2s ease-in-out;
+}
+.sessao-7 .cards-img{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sessao-7 .cards-img img{
+  width: 32%;
+  margin-top: 16px;
+  border-radius: 7px;
+
+  transition: all 0.2s ease-in-out;
+}
+.sessao-7 .cards-img img:hover,
+.sessao-7 .first-image:hover{
+  transform: scale(1.03);
+  box-shadow: 0 0 10px 2px rgba(0,0,0,0.4);
+}
+
+/*  sesão 8 */
+
+.sessao-8 h1{
+  margin-top: 50px;
+}
+.sessao-8 p .float-left{
+  float: left;
+  margin: 0 15px 10px 0;
+}
+.sessao-8 p .float-right{
+  float: right;
+  margin: 0 0 10px 15px;
+}
+.sessao-8 p{
+  text-align: justify;
+  margin-bottom: 40px;
+}
+.sessao-8 {
+  margin-bottom: 150px;
 }

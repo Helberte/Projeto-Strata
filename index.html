@@ -8,15 +8,23 @@
   <meta name="keywords" content="projeto, html, css, design, web">
   <meta name="author" content="Helberte">
 
+  <!-- css -->
+  <link href="public/css/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="public/css/style.css">
-  <script src="https://kit.fontawesome.com/c8b8b3d409.js" crossorigin="anonymous"></script>
+ 
+  <!-- icones -->
+  <script src="https://kit.fontawesome.com/c8b8b3d409.js" crossorigin="anonymous"></script> 
 
   <title>Strata</title>
 </head>
 <body>
   
+  <div class="scroll-btn">
+    <i class="fa-solid fa-chevron-up"></i>
+  </div>
+
   <header>
-    <div class="pessoa">
+    <div data-aos="fade-right" class="pessoa">
       <img src="public/img/avatar.jpg" alt="Imagem pessoa">
       <h2>Trabalhos e groselhas de<br> <strong> Helberte Costa Arruda</strong>, <br> um zé ninguém qualuquer</h2>
     </div>
@@ -33,11 +41,8 @@
     </div>
   </header>
 
-
   <!-- sessão 1 -->
-
   <main>
-
     <section class="sessao sessao-1">
       <h1 class="space-botton-h1">Quando o header é aside e o aside é no header</h1>
 
@@ -48,53 +53,53 @@
       <h1 class="space-botton-h1">Trabalhos recentes</h1>
 
       <div class="cards">
-        <div class="card">
+        <div data-tilt class="card">
           <img src="public/img/fulls/01.jpg" alt="Imagem 1">
           <p>Magna sed consequat tempus</p>
         </div>
-        <div class="card">
+        <div  data-tilt class="card">
           <img src="public/img/fulls/02.jpg" alt="Imagem 2">
           <p>Magna sed consequat tempus</p>
         </div>
 
         <p class="para-meio">Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 
-        <div class="card">
+        <div  data-tilt class="card">
           <img src="public/img/fulls/03.jpg" alt="Imagem 3">
           <p>Magna sed consequat tempus</p>
         </div>
-        <div class="card">
+        <div data-tilt class="card">
           <img src="public/img/fulls/04.jpg" alt="Imagem 4">
           <p>Magna sed consequat tempus</p>
         </div>
 
         <p class="para-meio">Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 
-        <div class="card">
+        <div data-tilt class="card">
           <img src="public/img/fulls/05.jpg" alt="Imagem 5">
           <p>Magna sed consequat tempus</p>
         </div>
-        <div class="card">
+        <div  data-tilt class="card">
           <img src="public/img/fulls/06.jpg" alt="Imagem 6">
           <p>Magna sed consequat tempus</p>
         </div>
 
       </div>
-      <button class="veja-portfolio">Veja portfolio completo</button>
+      <button data-aos="fade-up" class="veja-portfolio">Veja portfolio completo</button>
     </section>
 
     <section class="sessao sessao-2">
-      <h1 class="space-botton-h1">Get in Touch</h1>
+      <h1 data-aos="fade-up" class="space-botton-h1">Get in Touch</h1>
       <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.
       </p>
 
-      <div class="contato">
+      <div data-aos="fade-up" class="contato">
         <form action="#" method="POST">
 
           <div class="dados-1">
             <div>
               <label for="nome">nome </label>
-              <input class="dados" id="nome" type="text" placeholder="Nome completo" maxlength="100" required autocomplete="on" autofocus name="nome">
+              <input class="dados" id="nome" type="text" placeholder="Nome completo" maxlength="100" required autocomplete="on" name="nome">
             </div>
             
             <div>
@@ -120,7 +125,7 @@
     </section>
 
     <section class="sessao sessao-3">
-      <h1 class="space-botton-h1">Elements</h1>
+      <h1 data-aos="fade-up" class="space-botton-h1">Elements</h1>
       <h2>Text</h2>
       <p>This is <span>bold</span> and this is <strong>strong</strong>. This is <i>italic</i>  and this is <i class="emp">emphasized</i>. This is <sub> superscript</sub> text and this is <sup> subscript</sup> text. This is <span class="unde"> underlined</span> and this is <br> <code> code: for (;;) { ... } </code>. Finally, this is <a href="#">a link.</a> 
       </p>
@@ -132,7 +137,7 @@
       <h5 class="hs space-botton-h1">titulo h5</h5>
       <h6 class="hs space-botton-h1">titulo h6</h6>
 
-      <div class="citacao">
+      <div data-aos="fade-up" class="citacao">
         <p>Esta é uma citação tirada da Mozilla Developer Center.
         </p>
         <p>outros paragráfos</p>
@@ -149,9 +154,9 @@
     </section>
 
     <section class="sessao sessao-3">
-      <h1 class="space-botton-h1">Listas</h1>
+      <h1 data-aos="fade-up" class="space-botton-h1">Listas</h1>
 
-      <div class="container">
+      <div data-aos="fade-up" class="container">
         <div class="column column-1">
           <h2>Não ordenada</h2>
   
@@ -213,7 +218,7 @@
       <h2>Default</h2>
 
 
-      <table>
+      <table data-aos="flip-left">
         <thead>
           <tr>
             <th>Name</th>
@@ -252,7 +257,7 @@
       </table>
 
       <h2 class="alternate">Alternate</h2>
-      <table class="table-2">
+      <table data-aos="flip-right" class="table-2">
         <thead>
           <tr class="first-line">
             <th>Name</th>
@@ -300,37 +305,37 @@
     <section class="sessao sessao-5">
       <h1 class="space-botton-h1">Buttons</h1>
       <div>
-        <button>Default</button>
-        <button>Default</button>
+        <button class="button-fill">Default</button>
+        <button class="button-not-fill">Default</button>
       </div>
       <div>
-        <button>Default</button>
-        <button>Default</button>
+        <button class="button-fill">Default</button>
+        <button class="button-not-fill">Default</button>
       </div>
-      <div>
-        <button>Default</button>
-        <button>Default</button>
+      <div class="button-three">
+        <button class="button-fill">Default</button>
+        <button class="button-not-fill">Default</button>
       </div>
-      <div>
-        <button>Default</button>
-        <button>Default</button>
+      <div class="button-four">
+        <button class="button-fill">Default</button>
+        <button class="button-not-fill">Default</button>
       </div>
-      <button>Default</button>
+      <button class="button-fill">Default</button>
     </section>
 
     <section class="sessao sessao-6">
       <h1 class="space-botton-h1">Forms</h1>
 
-      <form action="#" method="POST">
+      <form data-aos="fade-up" action="#" method="POST">
         <label>Nome
-          <input type="text" placeholder="Digite seu nome" maxlength="150" required autocomplete="on" name="nome">
+          <input class="input-sessao-6-fill" type="text" placeholder="Digite seu nome" maxlength="150" required autocomplete="on" name="nome">
         </label>
 
         <label>Email
-          <input type="email" name="email" id="email" placeholder="Digite seu email" maxlength="150" required autocomplete="on">
+          <input class="input-sessao-6-fill" type="email" name="email" id="email" placeholder="Digite seu email" maxlength="150" required autocomplete="on">
         </label>
 
-        <select name="sexo" id="sexo">
+        <select class="input-sessao-6-fill" name="sexo" id="sexo">
           <option value="masculino">Masculino</option>
           <option value="feminino">Feminino</option>
         </select>
@@ -363,50 +368,61 @@
 
         <label>
           Mensagem:
-          <textarea name="outra-msg" id="outra-msg" cols="30" rows="10" placeholder="Digite uma mensagem"></textarea>
+          <textarea class="input-sessao-6-fill" name="outra-msg" id="outra-msg" cols="30" rows="10" placeholder="Digite uma mensagem"></textarea>
         </label>
         
         <div>
-          <input type="submit" value="Enviar">
-          <input type="reset" value="Limpar">
+          <input class="button-fill" type="submit" value="Enviar">
+          <input class="button-not-fill" type="reset" value="Limpar">
         </div>              
       </form>
     </section>
 
     <section class="sessao sessao-7">
       <h1 class="space-botton-h1">Imagens</h1>
-      <img src="public/img/fulls/01.jpg" alt="">
+      <img data-aos="fade-up" class="first-image" src="public/img/fulls/01.jpg" alt="">
 
-      <div class="cards-img">
+      <div data-aos="fade-up" class="cards-img">
 
-        <img src="public/img/fulls/01.jpg" alt="" class="card-img">
-        <img src="public/img/fulls/02.jpg" alt="" class="card-img">
-        <img src="public/img/fulls/03.jpg" alt="" class="card-img">
-        <img src="public/img/fulls/04.jpg" alt="" class="card-img">
-        <img src="public/img/fulls/05.jpg" alt="" class="card-img">
-        <img src="public/img/fulls/06.jpg" alt="" class="card-img">
-        <img src="public/img/fulls/01.jpg" alt="" class="card-img">
-        <img src="public/img/fulls/02.jpg" alt="" class="card-img">
-        <img src="public/img/fulls/03.jpg" alt="" class="card-img">
+        <img data-tilt data-tilt-max="30"  src="public/img/fulls/01.jpg" alt="" class="card-img">
+        <img data-tilt data-tilt-max="30"  src="public/img/fulls/02.jpg" alt="" class="card-img">
+        <img  data-tilt data-tilt-max="30" src="public/img/fulls/03.jpg" alt="" class="card-img">
+        <img data-tilt data-tilt-max="30"  src="public/img/fulls/04.jpg" alt="" class="card-img">
+        <img data-tilt data-tilt-max="30"  src="public/img/fulls/05.jpg" alt="" class="card-img">
+        <img  data-tilt data-tilt-max="30" src="public/img/fulls/06.jpg" alt="" class="card-img">
+        <img data-tilt data-tilt-max="30"  src="public/img/fulls/01.jpg" alt="" class="card-img">
+        <img data-tilt data-tilt-max="30"  src="public/img/fulls/02.jpg" alt="" class="card-img">
+        <img data-tilt data-tilt-max="30"  src="public/img/fulls/03.jpg" alt="" class="card-img">
       </div>
     </section>
 
 
-    <section class="sessao-sessao-8">
+    <section class="sessao sessao-8">
       <h1 class="space-botton-h1">Left & Right</h1>
 
-      <p>
-        <img src="public/img/avatar.jpg" alt="">
+      <p data-aos="fade-up">
+        <img class="float-left" src="public/img/avatar.jpg" alt="">
         Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. 
       </p>
 
-      <p>
-        <img src="public/img/avatar.jpg" alt="">
+      <p class="last-paragraf" data-aos="fade-up">
+        <img class="float-right" src="public/img/avatar.jpg" alt="">
         Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. 
       </p>     
     </section>
   </main>
 
+
+  <script type="text/javascript" src="public/js/vanilla-tilt.min.js"></script>
+  <script src="public/js/jquery-3.6.3.min.js"></script>
+  <script src="public/js/script.js"></script>
+  <script src="public/js/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      offset: 320
+    });
+  </script>
   
 </body>
 </html>
