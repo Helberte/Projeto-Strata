@@ -88,6 +88,7 @@ header .pessoa h2{
   font-size: 20px;
   color: #d3c9c7;
   font-weight: 500;
+  width: 300px;
 }
 header .pessoa h2 strong{
   color: white;
@@ -586,6 +587,7 @@ main{
   height: 500px;
   border-radius: 7px;
   margin-bottom: 15px;
+  object-fit: cover;
 
   transition: all 0.2s ease-in-out;
 }
@@ -627,4 +629,106 @@ main{
 }
 .sessao-8 {
   margin-bottom: 150px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1284px){
+  header{
+    position: static;
+    width: 100%;
+    height: 80vh;
+    min-height: 500px;
+    background-position: center center;
+
+    align-items: center;
+    justify-content: center;
+  }
+  main{
+    width: 100%;
+    padding: 80px 70px 70px 70px;
+  }
+  header .pessoa{
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  header .pessoa h2{
+    text-align: center!important;
+    width: 500px;
+  }
+  .footer-header{
+    align-items: center;
+    margin: 25px 0 0 0;
+  }
+  .footer-header .fa-brands{
+    margin-left: 0;
+    font-size: 30px;
+  }
+  .footer-header .icons-div{
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+}
+
+@media (max-width: 806px){
+  main{
+    padding: 80px 50px 70px 50px;
+  }
+  .cards .card{
+    width: 100%;
+  }
+  .cards .card p{
+    margin-bottom: 25px;
+  }
+  .contato{
+    flex-direction: column;
+  }
+  .contato form{
+    width: 100%;
+  }
+  .contato .endereco{
+    width: 100%;
+    padding: 0;
+  }
+  .sessao-7 .first-image{
+    height: 350px;
+  }
+  .sessao-7 .cards-img img{
+    width: 48%;
+  }
+}
+
+@media (max-width: 580px){
+  .container{
+    flex-direction: column;
+  }
+  .sessao-3 .column-2 .fa-brands{
+    margin-bottom: 25px;
+  }
+  .sessao-4{
+    margin-top: 30px;
+  }
+  .sessao-7 .cards-img img{
+    width: 100%;
+  }
+  main{
+    padding: 70px 40px 70px 40px;
+  }
+}
+
+@media (max-width:542px){
+  header .pessoa h2{
+    width: 90%;
+  }
+}
+@media (max-width:374px){
+  main {
+    padding: 60px 30px 70px 30px;
+  }
+  .veja-portfolio{
+    width: 100%;
+  }
 }
