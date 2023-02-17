@@ -323,7 +323,6 @@ main{
 }
 .container .column{
   width: 50%;
-  border: solid 1.5px #dddddd;
 }
 .container .column-1 ul,
 .container .column-1 ol{
@@ -366,4 +365,91 @@ main{
   font-size: 16px;
   border-radius: 5px;
   margin-bottom: 25px;
+}
+.sessao-3 .column-2{
+  display: flex;
+  flex-direction: column;
+}
+.sessao-3 .column-2 ul{
+  list-style-type: none;
+}
+.sessao-3 .column-2 ul li{
+  border-bottom: #4dd1ac 2px solid;
+  margin-bottom: 7px;
+}
+.sessao-3 .column-2 ul .li-last{
+  border: none;
+  border-bottom: 23px;
+}
+.sessao-3 .column-2 .fa-brands{
+  font-size: 30px;
+  margin-left: 8px;
+  color: #49bf9d;
+  margin-bottom: 90px;
+}
+.sessao-3 .column-2 .button-green,
+.sessao-3 .column-2 .button-transparent{
+  height: 37px;
+  border-radius: 7px;
+}
+.sessao-3 .column-2 .button-green{
+  border: none;
+  background-color: #49bf9d;
+  color: white;
+}
+.sessao-3 .column-2 .button-transparent{
+  border: solid 2px #49bf9d;
+  background-color: white;
+  color: #383838;
+}
+.sessao-3 .column-2 .button-middle{
+  margin-bottom: 25px;
+}
+
+/* sessão 4 */
+
+.sessao-4 h2{
+  margin-bottom: 20px;
+}
+.sessao-4 table, tr, th, td{
+  border-collapse: collapse;
+}
+.sessao-4 table tr, th, td{
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+  font-size: 14px;
+}
+
+.sessao-4 table th{
+  background-color: rgb(204, 204, 204);
+  font-weight: bold;
+  color: #6d6d6d;
+}
+.sessao-4 table tr:nth-child(even){
+  background-color: rgb(238, 238, 238);
+}
+.last-tr-table td{
+  border-bottom: solid 2px #7a7a7a;
+}
+.sessao-4 table th, td{
+  padding: 12px 7px;
+}
+.sessao-4 table{
+  width: 100%;
+}
+.sessao-4 .alternate{
+  margin: 35px 0;
+}
+.sessao-4 .table-2 td{
+  border: 1px solid #ccc;
+}
+.sessao-4 .table-2 .last-tr{
+  background-color: transparent;
+  border: none;
+}
+.sessao-4 .table-2 .last-tr td{
+  border: none;
+}
+.sessao-4 .table-2 .first-line{
+  border-left: 1px solid #ccc;
 }
