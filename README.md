@@ -15,5 +15,8 @@ Clique nesta etiqueta e veja no seu navegador
 
 ---
 
+<div align="center">
 
-![Demonstração do site](public/img/demonstracao.gif)
+  ![Demonstração do site](public/img/demonstracao.gif)
+
+</div>
